@@ -1,0 +1,204 @@
+body {
+  background-color: #50a3a2;
+}
+header {
+  display: flex;
+  justify-content: right;
+  margin: -.5em;
+  background-color:rgb(101,198,196);
+  box-shadow: 0.6em 0.6em 0.6em 0 rgba(0,0,0,0.2)
+}
+.home {
+  border: 1px transparent black;
+  display: flex;
+  background-color: rgb(246, 246, 246, .6);
+  justify-content: center;
+  margin: 15em 0 0em 0em;
+  height: 30em;
+  object-fit: cover;
+  
+}
+
+.logo {
+  width: 8em;
+  padding-bottom: 2em;
+}
+.menu {
+  float: right;
+  display: flex;
+}
+.box-shadow-menu {
+  position: relative;
+  padding-left: 10em;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.7em;
+  height: 0.2em;
+  background: black;
+  box-shadow: 0 0.6em 0 0 black, 0 1.2em 0 0 black;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn{
+  font-size: 1em;
+  min-width: 10em;
+  border: none;
+  color: black;
+  background-color: transparent;
+  font-family: inherit; 
+  margin-right: 3%;
+  margin-left: 1em;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 10em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a{
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: .5em .5em;
+}
+.dropdown-content:hover a:hover {
+  background-color: rgba(34, 144, 142, 0.6);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color: rgba(101,198,196 , .6);
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.browse_text {
+  text-align: center;
+}
+/* songs image wrapper */
+.songs {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 3em;
+  width: 20em;
+  text-align: center;
+  
+}
+li, ul {
+  list-style: none;
+}
+.buttons a {
+  display: inline-block;
+}
+img {
+  width: 15em;
+  border-radius: 5em;
+}
+
+/* sign in and login in forms */
+.signIn-form {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 25em;
+  margin-top: -12.5em;
+  /* overflow: hidden; */
+}
+.sign {
+  text-align: center;
+}
+.sign-input-wrapper{
+  max-width: 37.5em;
+  margin: 0 auto;
+  height: 25em;
+  text-align: center;
+}
+.col {
+  padding: 1.2em 0;
+  position: relative;
+  z-index: 2;
+}
+  input {
+    display: block;
+    appearance: none;
+    outline: 0;
+    border: 1px solid fade(white, 40%);
+    background-color: fade(white, 20%);
+    width: 20em;
+    border-radius: .3em;
+    padding: .9em 1em;
+    margin: 0 auto .9em auto;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+    transition-duration: 0.25s;
+		font-weight: 300;
+  }
+    :hover {
+			background-color: fade(red, 40%);
+		}
+		
+		:focus{
+			background-color: orange;
+			width: 300px;
+		}
+    .button1 {
+      appearance: none;
+      outline: 0;
+      background-color: white;
+      border: 0;
+      padding: .6em .9em
+    }
+
+/* .signIn-form {
+  border: 2px transparent black;
+  background-color: #65c6c4;
+  border-radius: 1em;
+  width: 25em;
+  height: 20em;
+  margin: 5% 35% 0 35%;
+  justify-content: center;
+  text-align: center;
+  padding: 5em;
+  box-shadow: 0px .5em 1em 0px rgba(0,0,0,0.2);
+}
+.sign-input-wrapper {
+  padding: 2em;
+}
+.password, .dotifyId {
+  font-size: x-large;
+  width: 100%;
+  height: 2em;
+  line-height: 1.2;
+  background-color: transparent;
+  border: transparent;
+  border-radius: .3em;
+  padding: 0 1.5em;
+  box-shadow: 0px .5em 1em 0px rgba(0,0,0,0.2); ;
+} */
+
+/* effects to let people know to sign up */
+/* .img_descr {
+  position: absolute;
+  visibility: hidden;
+  background: rgba(29, 106, 154, 0.72);
+}
+.img_wrap:hover .img_descr {
+  visibility: visible;
+} */
+
