@@ -82,7 +82,9 @@ const Profile = ({ authenticated, user, handleLogOut }) => {
               </button>
             </div>
           </form>
-          <button onClick={handleDelete}>Delete Account</button>
+          <button className="regButton" onClick={handleDelete}>
+            Delete Account
+          </button>
         </div>
       </div>
     )

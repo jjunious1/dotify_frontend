@@ -2,6 +2,7 @@ body {
   background-color: rgba(101,198,196);
   color: white;
 }
+/* home page css */
 header {
   display: flex;
   justify-content: space-between;
@@ -12,7 +13,9 @@ header {
 .home {
   border: 1px transparent black;
   display: grid;
-  background-color: rgb(52, 44, 69, .4);
+  text-align: center;
+  background-color: rgb(52, 44, 69, .2);
+  box-shadow: 0.6em 0.6em 0.6em 0.6em rgba(0,0,0,0.2);
   justify-content: center;
   margin: 8em -1em 0em -1em;
   height: 30em;
@@ -21,8 +24,24 @@ header {
 }
 .home-logo {
   width: 15em;
+  height: 10em;
   border-radius: 4em;
 }
+
+.home-button {
+  font-size: 1.5em;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: .2em;
+  margin: 1em;
+  width: 8em;
+  height: 2em;
+  color: white;
+}
+.home-button:hover {
+    background-color: rgba(101,198,196);
+  }
+
 .logo {
   width: 8em;
   padding-bottom: 2em;
@@ -109,9 +128,6 @@ background-color: rgba(101,198,196 , .6);
 li, ul {
   list-style: none;
 }
-.buttons a {
-  display: inline-block;
-}
 .songimg {
   width: 10em;
   border-radius: 2em;
@@ -123,12 +139,12 @@ li, ul {
   top: 50%;
   left: 0;
   width: 100%;
-  height: 25em;
+  height: 35em;
   margin-top: -12.5em;
-  /* overflow: hidden; */
 }
 .sign {
   text-align: center;
+  font-weight: 300;
 }
 .sign-input-wrapper{
   max-width: 37.5em;
@@ -138,10 +154,13 @@ li, ul {
 }
 .col {
   padding: 1.2em 0;
+  border: 1px transparent black;
+  box-shadow: 1em 1em 1em 1em rgba(3, 145, 143, 0.4);
+  border-radius: 2em;
   position: relative;
   z-index: 2;
 }
-  input {
+  .password, .dotifyId, .email, .name, .confirmpassword {
     display: block;
     appearance: none;
     outline: 0;
@@ -160,50 +179,14 @@ li, ul {
   }
 		:focus{
 			background-color: rgba(181, 227, 226, 0.2);
-			width: 300px;
+			width: 18em;
 		}
     .button1 {
-      appearance: none;
-      outline: 0;
-      background-color: white;
-      border: 0;
-      padding: .6em .9em
+      margin-top: -15em;
     }
-
-/* .signIn-form {
-  border: 2px transparent black;
-  background-color: #65c6c4;
-  border-radius: 1em;
-  width: 25em;
-  height: 20em;
-  margin: 5% 35% 0 35%;
-  justify-content: center;
-  text-align: center;
-  padding: 5em;
-  box-shadow: 0px .5em 1em 0px rgba(0,0,0,0.2);
+.regButton {
+  font-size: 2.5em;
+  border: 1px solid black;
+  border-radius: .2em;
+  color: white;
 }
-.sign-input-wrapper {
-  padding: 2em;
-}
-.password, .dotifyId {
-  font-size: x-large;
-  width: 100%;
-  height: 2em;
-  line-height: 1.2;
-  background-color: transparent;
-  border: transparent;
-  border-radius: .3em;
-  padding: 0 1.5em;
-  box-shadow: 0px .5em 1em 0px rgba(0,0,0,0.2); ;
-} */
-
-/* effects to let people know to sign up */
-/* .img_descr {
-  position: absolute;
-  visibility: hidden;
-  background: rgba(29, 106, 154, 0.72);
-}
-.img_wrap:hover .img_descr {
-  visibility: visible;
-} */
-
