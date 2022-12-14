@@ -188,7 +188,7 @@ li, ul {
     .button1 {
       margin-top: -15em;
     }
-.regButton {
+.logButton {
   font-size: 2.5em;
   border: 1px solid black;
   border-radius: .2em;
@@ -204,10 +204,13 @@ li, ul {
   height: 35em;
   margin-top: -12.5em;
 }
-.regButton{
-  justify-content: center;
-}
-.col {
+.col2 {
+  padding: 1.2em 0;
+  border: 1px transparent black;
+  box-shadow: 1em 1em 1em 1em rgba(3, 145, 143, 0.4);
+  border-radius: 2em;
+  position: relative;
+  z-index: 2;
   margin: 20% 0 0 25%;
   height: 40em;
   width: 60%;
@@ -218,6 +221,13 @@ li, ul {
   margin: 0 auto;
   height: 4em;
   text-align: center;
+}
+
+.regButton {
+    font-size: 2.5em;
+    border: 1px solid black;
+    border-radius: .2em;
+    color: white;
 }
 
 

@@ -36,7 +36,7 @@ const Register = () => {
 
   return (
     <div className="form">
-      <div className="col">
+      <div className="col2">
         <form className="register" onSubmit={handleSubmit}>
           <h1 className="sign">Hello</h1>
           <p className="sign">Create your Dotify Account below</p>
@@ -109,8 +109,8 @@ const Register = () => {
       </div>
       <div className="extras">
         <p>
-          Not a member?{'  '}
-          <a href="/register">Sign up now</a>
+          Have an account?{'  '}
+          <a href="/login">Login</a>
         </p>
         <p>
           <Link to="/">Back</Link> to homepage

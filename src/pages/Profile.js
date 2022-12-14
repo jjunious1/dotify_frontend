@@ -43,14 +43,12 @@ const Profile = ({ authenticated, user, handleLogOut }) => {
           handleLogOut={handleLogOut}
         />
         <h1>Welcome to your profile {user.dotifyId}</h1>
-        <h2>
-          You can update the password for your account or delete your account
-        </h2>
-        <div className="sign">
-          <form className="col" onSubmit={handleSubmit}>
-            <div className="input-wrapper">
+        <h2>You can update the password or delete your account here</h2>
+        <div className="col3">
+          <form className="profile" onSubmit={handleSubmit}>
+            <div className="input-wrapper2">
               <input
-                className="password"
+                className="pword"
                 onChange={handleChange}
                 type="password"
                 name="password"
@@ -59,9 +57,9 @@ const Profile = ({ authenticated, user, handleLogOut }) => {
                 required
               />
             </div>
-            <div className="input-wrapper">
+            <div className="input-wrapper2">
               <input
-                className="confirmPassword"
+                className="confirmpword"
                 onChange={handleChange}
                 type="confirmPassword"
                 name="confirmPassword"
@@ -70,19 +68,17 @@ const Profile = ({ authenticated, user, handleLogOut }) => {
                 required
               />
             </div>
-            <div className="button1">
-              <button
-                className="regButton"
-                disabled={
-                  !formValues.password &&
-                  formValues.confirmPassword === formValues.password
-                }
-              >
-                Change
-              </button>
-            </div>
+            <button
+              className="upButton"
+              disabled={
+                !formValues.password &&
+                formValues.confirmPassword === formValues.password
+              }
+            >
+              Change
+            </button>
           </form>
-          <button className="regButton" onClick={handleDelete}>
+          <button className="delButton" onClick={handleDelete}>
             Delete Account
           </button>
         </div>

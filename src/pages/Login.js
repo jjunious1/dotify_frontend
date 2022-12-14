@@ -57,7 +57,7 @@ const Login = (props) => {
           </div>
           <div className="button1">
             <button
-              className="regButton"
+              className="logButton"
               disabled={!formValues.dotifyId || !formValues.password}
             >
               Sign In
