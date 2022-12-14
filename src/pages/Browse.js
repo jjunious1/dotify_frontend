@@ -49,7 +49,7 @@ const Browse = ({ authenticated, user, handleLogOut }) => {
           {songs.map((song) => (
             <div className="songs">
               <li key={song.id}>
-                <img src={song.img} alt="artist" />
+                <img className="songimg" src={song.img} alt="artist" />
                 <h3>{song.artists_name}</h3>
                 <h4>{song.genre}</h4>
                 <div className="buttons">

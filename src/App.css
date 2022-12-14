@@ -1,5 +1,6 @@
 body {
-  background-color: #50a3a2;
+  background-color: black;
+  color: white;
 }
 header {
   display: flex;
@@ -10,15 +11,18 @@ header {
 }
 .home {
   border: 1px transparent black;
-  display: flex;
-  background-color: rgb(246, 246, 246, .6);
+  display: grid;
+  background-color: rgb(52, 44, 69, .6);
   justify-content: center;
   margin: 15em 0 0em 0em;
   height: 30em;
   object-fit: cover;
   
 }
-
+.home-logo {
+  width: 15em;
+  border-radius: 4em;
+}
 .logo {
   width: 8em;
   padding-bottom: 2em;
@@ -90,7 +94,10 @@ background-color: rgba(101,198,196 , .6);
 /* songs image wrapper */
 .songs {
   display: inline-block;
-  border: 1px solid black;
+  border: 2px transparent rgba(101,198,196 , .4);
+  border-radius: 3em;
+  background-color: rgba(0,0,0,0.2);
+  box-shadow: 1em 1em 1em  rgba(3, 145, 143, 0.4);
   padding: 1em;
   margin: 3em;
   width: 20em;
@@ -103,9 +110,9 @@ li, ul {
 .buttons a {
   display: inline-block;
 }
-img {
-  width: 15em;
-  border-radius: 5em;
+.songimg {
+  width: 10em;
+  border-radius: 2em;
 }
 
 /* sign in and login in forms */

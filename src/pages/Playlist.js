@@ -66,7 +66,7 @@ const Playlist = ({ authenticated, user, handleLogOut }) => {
         {myPlayList.map((songs) => (
           <div className="songs">
             <li key={songs.id}>
-              <img src={songs.img} alt="artist" />
+              <img className="songimg" src={songs.img} alt="artist" />
               <h3>{songs.artists_name}</h3>
               <h4>{songs.genre}</h4>
               <button id="musicId" value={songs.id} onClick={selectSong}>
