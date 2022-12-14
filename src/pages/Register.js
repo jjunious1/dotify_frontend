@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { RegisterUser } from '../services/Auth'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const Register = () => {
   const [formValues, setFormValues] = useState({
@@ -35,14 +35,14 @@ const Register = () => {
   }
 
   return (
-    <div className="signin col">
-      <div className="card-overlay centered">
-        <form className="col" onSubmit={handleSubmit}>
-          <h1>Hello</h1>
-          <p>Create your Dotify Account below</p>
+    <div className="form">
+      <div className="col">
+        <form className="register" onSubmit={handleSubmit}>
+          <h1 className="sign">Hello</h1>
+          <p className="sign">Create your Dotify Account below</p>
           <div className="input-wrapper">
             <input
-              className="name"
+              className="name1"
               onChange={handleChange}
               name="name"
               type="text"
@@ -53,7 +53,7 @@ const Register = () => {
           </div>
           <div className="input-wrapper">
             <input
-              className="email"
+              className="email1"
               onChange={handleChange}
               name="email"
               type="email"
@@ -64,7 +64,7 @@ const Register = () => {
           </div>
           <div className="input-wrapper">
             <input
-              className="dotifyId"
+              className="dotifyId1"
               onChange={handleChange}
               name="dotifyId"
               type="dotifyId"
@@ -75,7 +75,7 @@ const Register = () => {
           </div>
           <div className="input-wrapper">
             <input
-              className="password"
+              className="password1"
               onChange={handleChange}
               type="password"
               name="password"
@@ -86,7 +86,7 @@ const Register = () => {
           </div>
           <div className="input-wrapper Password">
             <input
-              className="confirmpassword"
+              className="confirmpassword1"
               onChange={handleChange}
               type="password"
               name="confirmPassword"
@@ -95,19 +95,26 @@ const Register = () => {
               required
             />
           </div>
-          <div className="button1">
-            <button
-              className="regButton"
-              disabled={
-                !formValues.email ||
-                (!formValues.password &&
-                  formValues.confirmPassword === formValues.password)
-              }
-            >
-              Create Account
-            </button>
-          </div>
+          <button
+            className="regButton reg"
+            disabled={
+              !formValues.email ||
+              (!formValues.password &&
+                formValues.confirmPassword === formValues.password)
+            }
+          >
+            Create Account
+          </button>
         </form>
+      </div>
+      <div className="extras">
+        <p>
+          Not a member?{'  '}
+          <a href="/register">Sign up now</a>
+        </p>
+        <p>
+          <Link to="/">Back</Link> to homepage
+        </p>
       </div>
     </div>
   )

@@ -134,9 +134,12 @@ li, ul {
 }
 
 /* sign in and login in forms */
+.extras {
+  text-align: center;
+}
 .signIn-form {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 0;
   width: 100%;
   height: 35em;
@@ -152,6 +155,7 @@ li, ul {
   height: 25em;
   text-align: center;
 }
+
 .col {
   padding: 1.2em 0;
   border: 1px transparent black;
@@ -169,7 +173,7 @@ li, ul {
     width: 20em;
     border-radius: .3em;
     padding: .9em 1em;
-    margin: 0 auto .9em auto;
+    margin: 4em auto .9em auto;
     display: block;
     text-align: center;
     font-size: 1.2em;
@@ -190,3 +194,48 @@ li, ul {
   border-radius: .2em;
   color: white;
 }
+
+/* register form */
+.register {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 35em;
+  margin-top: -12.5em;
+}
+.regButton{
+  justify-content: center;
+}
+.col {
+  margin: 20% 0 0 25%;
+  height: 40em;
+  width: 60%;
+  
+}
+.input-wrapper{
+  max-width: 37.5em;
+  margin: 0 auto;
+  height: 4em;
+  text-align: center;
+}
+
+
+.password1, .dotifyId1, .email1, .name1, .confirmpassword1 {
+  display: block;
+  appearance: none;
+  outline: 0;
+  border: 1px solid fade(white, 40%);
+  background-color: fade(white, 20%);
+  width: 20em;
+  border-radius: .3em;
+  padding: .9em 1em;
+  margin: .3em auto .9em auto;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  color: black;
+  transition-duration: 0.25s;
+  font-weight: 300;
+}
+

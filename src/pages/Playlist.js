@@ -69,13 +69,13 @@ const Playlist = ({ authenticated, user, handleLogOut }) => {
               <img className="songimg" src={songs.img} alt="artist" />
               <h3>{songs.artists_name}</h3>
               <h4>{songs.genre}</h4>
-              <button id="musicId" value={songs.id} onClick={selectSong}>
-                Remove
-              </button>
             </li>
           </div>
         ))}
       </ul>
+      <button id="musicId" value="" onClick={selectSong}>
+        Remove
+      </button>
       <div className="container" id="footer">
         <AudioPlayer
           volume="0.5"

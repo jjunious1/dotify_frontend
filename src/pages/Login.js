@@ -24,6 +24,15 @@ const Login = (props) => {
   return (
     <div className="signIn-form">
       <h1 className="sign">Sign In</h1>
+      <div className="extras">
+        <p>
+          Not a member?{'  '}
+          <a href="/register">Sign up now</a>
+        </p>
+        <p>
+          <Link to="/">Back</Link> to homepage
+        </p>
+      </div>
       <div className="sign-input-wrapper">
         <form className="col" onSubmit={handleSubmit}>
           <input
@@ -55,13 +64,6 @@ const Login = (props) => {
             </button>
           </div>
         </form>
-        <p>
-          Not a member?{'  '}
-          <Link to="/Register">Sign up now</Link>
-        </p>
-        <p>
-          <Link to="/">Back</Link> to homepage
-        </p>
       </div>
     </div>
   )
