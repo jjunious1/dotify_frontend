@@ -41,8 +41,8 @@ const publicOptions = (
 
 return (
   <header className="sticky-header">
+    <img className='logo' src={logo} alt="logo" />
     <div className="nav">
-      <img className='logo' src={logo} alt="logo" />
       <div className="menu">
         {authenticated && user ? authenticatedOptions : publicOptions}
       </div>

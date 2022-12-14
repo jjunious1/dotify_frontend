@@ -1,10 +1,10 @@
 body {
-  background-color: black;
+  background-color: rgba(101,198,196);
   color: white;
 }
 header {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   margin: -.5em;
   background-color:rgb(101,198,196);
   box-shadow: 0.6em 0.6em 0.6em 0 rgba(0,0,0,0.2)
@@ -12,9 +12,9 @@ header {
 .home {
   border: 1px transparent black;
   display: grid;
-  background-color: rgb(52, 44, 69, .6);
+  background-color: rgb(52, 44, 69, .4);
   justify-content: center;
-  margin: 15em 0 0em 0em;
+  margin: 8em -1em 0em -1em;
   height: 30em;
   object-fit: cover;
   
@@ -38,8 +38,8 @@ header {
 .box-shadow-menu:before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 0em;
+  top: 0em;
   width: 1.7em;
   height: 0.2em;
   background: black;
@@ -48,6 +48,8 @@ header {
 .dropdown {
   position: relative;
   display: inline-block;
+  left: 6em;
+  top: 9em;
 }
 .dropbtn{
   font-size: 1em;
@@ -62,7 +64,7 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 10em;
+  min-width: 5em;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -156,12 +158,8 @@ li, ul {
     transition-duration: 0.25s;
 		font-weight: 300;
   }
-    :hover {
-			background-color: fade(red, 40%);
-		}
-		
 		:focus{
-			background-color: orange;
+			background-color: rgba(181, 227, 226, 0.2);
 			width: 300px;
 		}
     .button1 {
