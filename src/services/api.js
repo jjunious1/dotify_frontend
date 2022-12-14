@@ -1,6 +1,6 @@
 import Axios from 'axios'
 
-export const BASE_URL = 'http://dotify.herokuapp.com/'
+export const BASE_URL = 'https://dotify.herokuapp.com/'
 
 const Client = Axios.create({ baseURL: BASE_URL })
 
