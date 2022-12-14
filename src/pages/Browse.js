@@ -53,16 +53,21 @@ const Browse = ({ authenticated, user, handleLogOut }) => {
                 <h3>{song.artists_name}</h3>
                 <h4>{song.genre}</h4>
                 <div className="buttons">
-                  <button value={song.music_file} onClick={playSong}>
-                    Play
+                  <button
+                    className="play"
+                    value={song.music_file}
+                    onClick={playSong}
+                  >
+                    &#9658;
                   </button>
                   <form onSubmit={addLike}>
                     <button
+                      className="heart"
                       type="submit"
                       value={song.id}
                       onClick={addLikedSong}
                     >
-                      Like
+                      &#9829;
                     </button>
                   </form>
                 </div>

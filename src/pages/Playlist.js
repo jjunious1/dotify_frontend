@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import Client from '../services/api'
 import { BASE_URL } from '../services/api'
 import AudioPlayer from 'react-h5-audio-player'
@@ -11,6 +11,7 @@ const Playlist = ({ authenticated, user, handleLogOut }) => {
   const [myPlayList, setMyPlaylist] = useState([])
   const [playlist, setPlayList] = useState([])
   const [currentTrack, setTrackIndex] = useState(0)
+  let navigate = useNavigate()
   const [remove, setRemoveSong] = useState({
     musicId: 0,
     userId: parseInt(user.id)
@@ -62,6 +63,9 @@ const Playlist = ({ authenticated, user, handleLogOut }) => {
         user={user}
         handleLogOut={handleLogOut}
       />
+      <button id="musicId" value="" onClick={selectSong}>
+        Remove
+      </button>
       <ul>
         {myPlayList.map((songs) => (
           <div className="songs">
@@ -73,9 +77,6 @@ const Playlist = ({ authenticated, user, handleLogOut }) => {
           </div>
         ))}
       </ul>
-      <button id="musicId" value="" onClick={selectSong}>
-        Remove
-      </button>
       <div className="container" id="footer">
         <AudioPlayer
           volume="0.5"

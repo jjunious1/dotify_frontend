@@ -249,3 +249,28 @@ li, ul {
   font-weight: 300;
 }
 
+/* browse buttons */
+
+.heart {
+  font-size: 2em;
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  float: right;
+}
+.heart:hover, .play:hover {
+  color: red;
+}
+
+.play {
+  font-size: 2em;
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+}
+#musicId {
+  margin: 2em;
+  float: right;
+  border-radius: 2em;
+  background-color: white;
+}
