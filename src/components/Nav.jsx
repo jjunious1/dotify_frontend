@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
-import logo from '../images/logo-png.png'
+import logo from '../images/logo-transparent-png.png'
 
 
 const Nav = ({ authenticated, user, handleLogout }) => {
