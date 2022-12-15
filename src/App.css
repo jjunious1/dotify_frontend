@@ -1,6 +1,20 @@
 body {
-  background-color: rgba(101,198,196);
+  background: linear-gradient(-45deg, #52ccee, #9971f6, rgb(14, 182, 244), #35bf9f);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
   color: white;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /* home page css */
 header {
@@ -14,18 +28,15 @@ header {
   border: 1px transparent black;
   display: grid;
   text-align: center;
-  background-color: rgb(52, 44, 69, .2);
-  box-shadow: 0.6em 0.6em 0.6em 0.6em rgba(0,0,0,0.2);
   justify-content: center;
-  margin: 8em -1em 0em -1em;
-  height: 30em;
+  margin: 5em -1em 0em -1em;
+  height: 18em;
   object-fit: cover;
   
 }
 .home-logo {
-  width: 15em;
-  height: 10em;
-  border-radius: 4em;
+  width: 10em;
+  height: 8em;
 }
 
 .home-button {
@@ -147,6 +158,7 @@ li, ul {
 }
 .sign {
   text-align: center;
+  margin-top: 2em;
   font-weight: 300;
 }
 .sign-input-wrapper{
@@ -169,15 +181,16 @@ li, ul {
     appearance: none;
     outline: 0;
     border: 1px solid fade(white, 40%);
-    background-color: fade(white, 20%);
+    /* box-shadow: 1em 1em 1em 1em rgba(3, 145, 143, 0.4); */
+    background-color: transparent;
     width: 20em;
     border-radius: .3em;
-    padding: .9em 1em;
-    margin: 4em auto .9em auto;
+    padding: .7em 1em;
+    margin: 3em auto .9em auto;
     display: block;
     text-align: center;
     font-size: 1.2em;
-    color: black;
+    color: white;
     transition-duration: 0.25s;
 		font-weight: 300;
   }
@@ -211,7 +224,7 @@ li, ul {
   border-radius: 2em;
   position: relative;
   z-index: 2;
-  margin: 20% 0 0 25%;
+  margin: 0 0 0 20%;
   height: 40em;
   width: 60%;
   
@@ -236,7 +249,7 @@ li, ul {
   appearance: none;
   outline: 0;
   border: 1px solid fade(white, 40%);
-  background-color: fade(white, 20%);
+  background-color: transparent;
   width: 20em;
   border-radius: .3em;
   padding: .9em 1em;
@@ -244,7 +257,7 @@ li, ul {
   display: block;
   text-align: center;
   font-size: 1.2em;
-  color: black;
+  color: white;
   transition-duration: 0.25s;
   font-weight: 300;
 }
@@ -254,6 +267,7 @@ li, ul {
 .heart {
   font-size: 2em;
   appearance: none;
+  position: relative;
   background-color: transparent;
   border: 0;
   float: right;
